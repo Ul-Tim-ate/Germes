@@ -1,7 +1,5 @@
-const Heading = () =>{
-  return <header>
-    Header
-  </header>
-}
+const Heading = () => {
+  return <div>Header</div>;
+};
 
 export default Heading;
