@@ -1,0 +1,44 @@
+@import './_variables.sass'
+
+.header
+  color: $blackText
+  padding-top: 25px
+  &Container
+    display: flex
+    align-items: center
+  &Logo
+    margin-right: 44px
+  &Nav
+    margin-right: 56px
+
+.logo
+  display: flex
+  flex-direction: column
+  align-items: center
+  &Name
+    font-weight: 400
+    font-size: 40px
+    line-height: 48px
+    letter-spacing: 0.1em
+    margin-top: 20px
+
+.nav
+  width: 1400px
+  &List
+    display: flex
+    justify-content: space-between
+  &Item
+    font-weight: 400
+    font-size: 70px
+    line-height: 85px
+    letter-spacing: 0.05em
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      &::after
+        content: ''
+        width: 2px
+        height: 100%
+        display: block
+        background-color: black
+        margin-left: 30px
