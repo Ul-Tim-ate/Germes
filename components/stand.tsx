@@ -16,7 +16,6 @@ const Stand = () => {
           src={stand}
           alt="Вместе мы команда"
           className={styles.standImg}
-          placeholder="blur"
         />
       </div>
     </section>

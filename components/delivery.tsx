@@ -15,13 +15,11 @@ const Delivery = () => {
           src={delivery}
           alt="Доставка"
           className={styles.deliveryImg}
-          placeholder="blur"
         />
         <Image
           src={truck}
           alt="Грузовик доставки"
           className={styles.deliveryTruckImg}
-          placeholder="blur"
         />
       </div>
     </section>

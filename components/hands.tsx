@@ -14,7 +14,6 @@ const Hands = () => {
           src={hands}
           alt="Доставка"
           className={styles.handsImg}
-          placeholder="blur"
         />
         <span className={styles.handsParadise}>
           Хорошие отношения и своевремнная работа - наш

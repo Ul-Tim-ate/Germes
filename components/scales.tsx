@@ -23,13 +23,11 @@ const Scales = () => {
           src={left}
           alt="Для нас одинаково ценны качество и хорошее взаимоотношение"
           className={styles.scalesLeftImg}
-          placeholder="blur"
         />
         <Image
           src={right}
           alt="Для нас одинаково ценны качество и хорошее взаимоотношение "
           className={styles.scalesRightImg}
-          placeholder="blur"
         />
         <span className={styles.scalesLeftText}>Продукция</span>
         <span className={styles.scalesRightText}>Контакты</span>

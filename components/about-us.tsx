@@ -17,7 +17,6 @@ const AboutUs = () => {
           src={convProgress}
           alt="painted conveyor"
           className={styles.aboutUsBg}
-          placeholder="blur"
         />
         <h3
           className={`${styles.aboutUsItemHeader} ${styles.aboutUsItemHeaderService}`}
