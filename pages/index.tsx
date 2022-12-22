@@ -1,10 +1,11 @@
-import Heading from "../components/heading";
+import Wellcome from "../components/wellcome";
+import styles from "../styles/main.module.sass";
 
 const Main = () => {
   return (
-    <div className="">
-      
-    </div>
+    <section className={styles.main}>
+      <Wellcome />
+    </section>
   );
 };
 
