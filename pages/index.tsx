@@ -1,4 +1,5 @@
 import AboutUs from "../components/about-us";
+import Delivery from "../components/delivery";
 import Persons from "../components/persons";
 import Wellcome from "../components/wellcome";
 import styles from "../styles/main.module.sass";
@@ -14,6 +15,9 @@ const Main = () => {
       </div>
       <div className={styles.mainPersons}>
         <Persons />
+      </div>
+      <div className={styles.mainDelivery}>
+        <Delivery />
       </div>
     </section>
   );
