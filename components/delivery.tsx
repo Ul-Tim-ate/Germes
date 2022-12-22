@@ -11,11 +11,17 @@ const Delivery = () => {
         <h2 className={styles.deliveryHeader}>
           Каждый наш шаг совершается с учетом потребностей наших клиентов.
         </h2>
-        <Image src={delivery} alt="Доставка" className={styles.deliveryImg} />
+        <Image
+          src={delivery}
+          alt="Доставка"
+          className={styles.deliveryImg}
+          placeholder="blur"
+        />
         <Image
           src={truck}
           alt="Грузовик доставки"
           className={styles.deliveryTruckImg}
+          placeholder="blur"
         />
       </div>
     </section>
