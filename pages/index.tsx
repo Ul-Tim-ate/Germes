@@ -2,6 +2,7 @@ import AboutUs from "../components/about-us";
 import Delivery from "../components/delivery";
 import Hands from "../components/hands";
 import Persons from "../components/persons";
+import Stand from "../components/stand";
 import Wellcome from "../components/wellcome";
 import styles from "../styles/main.module.sass";
 
@@ -22,6 +23,9 @@ const Main = () => {
       </div>
       <div className={styles.mainHands}>
         <Hands />
+      </div>
+      <div className={styles.mainStand}>
+        <Stand />
       </div>
     </section>
   );

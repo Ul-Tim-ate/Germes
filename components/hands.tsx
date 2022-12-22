@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/hands.module.sass";
-import delivery from "./delivery";
 import hands from "../public/arms.png";
 const Hands = () => {
   return (
