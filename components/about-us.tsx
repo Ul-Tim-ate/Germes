@@ -6,7 +6,7 @@ import convProgress from "../public/conv-progress.png";
 const AboutUs = () => {
   return (
     <section className={styles.aboutUs}>
-      <div className="container">
+      <div className={`container ${styles.aboutUsWrapper}`}>
         <h2 className={styles.aboutUsHeader}>О нас: </h2>
         <h3 className={styles.aboutUsItemHeader}>Более года упешной работы</h3>
         <p className={styles.aboutUsItemText}>
