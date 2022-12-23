@@ -1,0 +1,33 @@
+@import './_variables'
+
+.productNav
+  position: absolute
+  top: 55px
+  left: 0
+  &List
+    display: flex
+    flex-direction: column
+    row-gap: 20px
+  &Item
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 30px
+    line-height: 36px
+    letter-spacing: 0.1em
+    width: 245px
+    height: 140px
+    color: $whiteText
+    padding: 35px
+    background: #000
+    cursor: pointer
+    &Vacuum
+      background-color: #FF6058
+    &Powder
+      background-color: #3B869F
+    &Plasma
+      background-color: #4B9454
+
+.invis
+  visibility: hidden

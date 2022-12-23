@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import styles from "../styles/product.module.sass";
+import ProductNav from "./product-nav";
 import ProductSwiper from "./product-swiper";
 
 interface ProductProps {}
@@ -22,6 +23,7 @@ const Product: FC<ProductProps> = () => {
           <ProductSwiper />
         </div>
         <button className={styles.productGetPrice}>Получить прайс</button>
+        <ProductNav />
       </div>
     </section>
   );
