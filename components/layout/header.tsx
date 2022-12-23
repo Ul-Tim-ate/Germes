@@ -1,6 +1,6 @@
-import styles from "../styles/header.module.sass";
+import styles from "../../styles/header.module.sass";
 import Image from "next/image";
-import logo from "../public/logo.svg";
+import logo from "../../public/logo.svg";
 
 const Header = () => {
   return (

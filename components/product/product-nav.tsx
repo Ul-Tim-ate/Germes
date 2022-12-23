@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/product-nav.module.sass";
+import styles from "../../styles/product-nav.module.sass";
 
 const ProductNav = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/wellcome.module.sass";
+import styles from "../../styles/wellcome.module.sass";
 
 const Wellcome = () => {
   return (

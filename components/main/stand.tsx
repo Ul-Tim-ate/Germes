@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../styles/stand.module.sass";
-import stand from "../public/stand.png";
+import styles from "../../styles/stand.module.sass";
+import stand from "../../public/stand.png";
 
 const Stand = () => {
   return (

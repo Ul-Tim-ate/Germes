@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../styles/hands.module.sass";
-import hands from "../public/arms.png";
+import styles from "../../styles/hands.module.sass";
+import hands from "../../public/arms.png";
 const Hands = () => {
   return (
     <section className={styles.hands}>
@@ -10,11 +10,7 @@ const Hands = () => {
         <p className={styles.handsDesc}>
           Благодаря такому подходу, с нами сотрудничают уже более 15 компаний
         </p>
-        <Image
-          src={hands}
-          alt="Доставка"
-          className={styles.handsImg}
-        />
+        <Image src={hands} alt="Доставка" className={styles.handsImg} />
         <span className={styles.handsParadise}>
           Хорошие отношения и своевремнная работа - наш
           <span className={styles.paradise}> рай</span>

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "../styles/product.module.sass";
+import styles from "../../styles/product.module.sass";
 import ProductNav from "./product-nav";
 import ProductSwiper from "./product-swiper";
 

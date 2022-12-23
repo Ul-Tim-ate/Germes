@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../styles/scales.module.sass";
-import scales from "../public/scales.svg";
-import left from "../public/production.png";
-import right from "../public/contacts.png";
+import styles from "../../styles/scales.module.sass";
+import scales from "../../public/scales.svg";
+import left from "../../public/production.png";
+import right from "../../public/contacts.png";
 const Scales = () => {
   return (
     <section className={styles.scales}>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import styles from "../styles/about-us.module.sass";
-import convProgress from "../public/conv-progress.png";
+import styles from "../../styles/about-us.module.sass";
+import convProgress from "../../public/conv-progress.png";
 
 const AboutUs = () => {
   return (

@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { A11y, Navigation } from "swiper";
-import styles from "../styles/product-swiper.module.sass";
+import styles from "../../styles/product-swiper.module.sass";
 import Image from "next/image";
-import changeSlide from "../public/change-slide.svg";
+import changeSlide from "../../public/change-slide.svg";
 import { useState } from "react";
 
 const NextButton = ({ swiper }: { swiper: any }) => {

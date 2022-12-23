@@ -1,10 +1,10 @@
-import AboutUs from "../components/about-us";
-import Delivery from "../components/delivery";
-import Hands from "../components/hands";
-import Persons from "../components/persons";
-import Scales from "../components/scales";
-import Stand from "../components/stand";
-import Wellcome from "../components/wellcome";
+import AboutUs from "../components/main/about-us";
+import Delivery from "../components/main/delivery";
+import Hands from "../components/main/hands";
+import Persons from "../components/main/persons";
+import Scales from "../components/main/scales";
+import Stand from "../components/main/stand";
+import Wellcome from "../components/main/wellcome";
 import styles from "../styles/main.module.sass";
 
 const Main = () => {
