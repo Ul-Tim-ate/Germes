@@ -4,8 +4,15 @@
   background-color: black
   padding-top: 10px
   color: $whiteText
-  padding-bottom: 80px
-  position: relative
+  padding-bottom: 100px
+  width: 1780px
+  position: absolute
+  z-index: -1
+  overflow: hidden
+  transition: 0.5s
+  transform: translateY(100%)
+  &Wrapper
+    position: relative
   &Header
     font-size: 60px
     line-height: 73px
@@ -47,3 +54,7 @@
     position: absolute
     top: 24px
     left: 25px
+
+.advanClass
+  z-index: 3
+  transform: translateY(-100%)

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { Dispatch, FC, SetStateAction } from "react";
 import styles from "../../styles/product-nav.module.sass";
 
-const ProductNav = () => {
+interface ProductNavProps {
+  setAdvan: Dispatch<SetStateAction<boolean>>;
+  advan: boolean;
+}
+
+const ProductNav: FC<ProductNavProps> = ({ advan, setAdvan }) => {
   return (
     <nav className={styles.productNav}>
       <ul className={styles.productNavList}>
@@ -22,6 +27,9 @@ const ProductNav = () => {
         </li>
         <li
           className={`${styles.productNavItem} ${styles.productNavItemAdvan}`}
+          onClick={() => {
+            setAdvan(true);
+          }}
         >
           Преимущества
         </li>
