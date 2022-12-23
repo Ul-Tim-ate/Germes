@@ -1,5 +1,11 @@
+import Product from "../components/product";
+
 const VacuumPlating = () => {
-  return <div className="">vacuum-plating</div>;
+  return (
+    <>
+      <Product />
+    </>
+  );
 };
 
 export default VacuumPlating;
