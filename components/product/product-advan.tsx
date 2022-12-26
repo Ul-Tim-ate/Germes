@@ -24,14 +24,18 @@ const ProductAdvan: FC<ProductAdvanProps> = ({
           <ul className={styles.productAdvanListColumn}>
             {leftColumn.map((el) => {
               return (
-                <li className={styles.productAdvanListColumnItem}>{el}</li>
+                <li key={el} className={styles.productAdvanListColumnItem}>
+                  {el}
+                </li>
               );
             })}
           </ul>
           <ul className={styles.productAdvanListColumn}>
             {rightColumn.map((el) => {
               return (
-                <li className={styles.productAdvanListColumnItem}>{el}</li>
+                <li key={el} className={styles.productAdvanListColumnItem}>
+                  {el}
+                </li>
               );
             })}
           </ul>
