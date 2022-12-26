@@ -29,6 +29,9 @@ const Product: FC<ProductProps> = ({
     case Products.POWDER_COATING:
       productClass = `${styles.productWrapperPowder}`;
       break;
+    case Products.PLASMA_CUTTING:
+      productClass = `${styles.productWrapperPlasma}`;
+      break;
     default:
       break;
   }

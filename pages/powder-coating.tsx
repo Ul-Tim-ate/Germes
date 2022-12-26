@@ -21,7 +21,7 @@ const PowderCoating = () => {
   ];
   return (
     <Product
-      header="Вакуумная металлизация"
+      header="Порошковая покраска"
       description={description}
       leftColumn={leftColumn}
       rightColumn={rightColumn}
