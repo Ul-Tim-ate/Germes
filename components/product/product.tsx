@@ -21,16 +21,20 @@ const Product: FC<ProductProps> = ({
   type,
 }) => {
   const [advan, setAdvan] = useState(false);
-  let productClass = "";
+  let borderClass = "";
+  let buttonClass = "";
   switch (type) {
     case Products.VACUUM_PLATING:
-      productClass = `${styles.productWrapperVacuum}`;
+      borderClass = `${styles.productWrapperVacuum}`;
+      buttonClass = `${styles.productGetPriceVacuum}`;
       break;
     case Products.POWDER_COATING:
-      productClass = `${styles.productWrapperPowder}`;
+      borderClass = `${styles.productWrapperPowder}`;
+      buttonClass = `${styles.productGetPricePowder}`;
       break;
     case Products.PLASMA_CUTTING:
-      productClass = `${styles.productWrapperPlasma}`;
+      borderClass = `${styles.productWrapperPlasma}`;
+      buttonClass = `${styles.productGetPricePlasma}`;
       break;
     default:
       break;
@@ -38,7 +42,7 @@ const Product: FC<ProductProps> = ({
 
   return (
     <section className={styles.product}>
-      <div className={`container ${styles.productWrapper} ${productClass}`}>
+      <div className={`container ${styles.productWrapper} ${borderClass}`}>
         <h1 className={styles.productHeader}>{header}</h1>
         {description.map((el) => {
           return <p className={styles.productDescription}>{el}</p>;
@@ -46,7 +50,9 @@ const Product: FC<ProductProps> = ({
         <div className={styles.productSwiper}>
           <ProductSwiper />
         </div>
-        <button className={styles.productGetPrice}>Получить прайс</button>
+        <button className={`${styles.productGetPrice} ${buttonClass}`}>
+          Получить прайс
+        </button>
         <ProductNav setAdvan={setAdvan} type={type} />
         <ProductAdvan
           leftColumn={leftColumn}

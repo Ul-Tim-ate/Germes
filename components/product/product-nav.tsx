@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { Dispatch, FC, SetStateAction } from "react";
 import styles from "../../styles/product-nav.module.sass";
 import { Products } from "../../types/products";
@@ -11,26 +12,41 @@ const ProductNav: FC<ProductNavProps> = ({ setAdvan, type }) => {
   return (
     <nav className={styles.productNav}>
       <ul className={styles.productNavList}>
-        <li
-          className={`${styles.productNavItem} ${styles.productNavItemVacuum} ${
-            type === Products.VACUUM_PLATING ? `${styles.invis}` : ""
-          }`}
-        >
-          Вакуумная металлизация
+        <li>
+          <Link
+            href={"/vacuum-plating"}
+            className={`${styles.productNavItem} ${
+              styles.productNavItemVacuum
+            } ${type === Products.VACUUM_PLATING ? `${styles.invis}` : ""} ${
+              styles.productNavItemText
+            }`}
+          >
+            Вакуумная металлизация
+          </Link>
         </li>
-        <li
-          className={`${styles.productNavItem} ${styles.productNavItemPowder} ${
-            type === Products.POWDER_COATING ? `${styles.invis}` : ""
-          }`}
-        >
-          Порошковая покраска
+        <li>
+          <Link
+            href={"/powder-coating"}
+            className={`${styles.productNavItem} ${
+              styles.productNavItemPowder
+            } ${type === Products.POWDER_COATING ? `${styles.invis}` : ""} ${
+              styles.productNavItemText
+            }`}
+          >
+            Порошковая покраска
+          </Link>
         </li>
-        <li
-          className={`${styles.productNavItem} ${styles.productNavItemPlasma} ${
-            type === Products.PLASMA_CUTTING ? `${styles.invis}` : ""
-          }`}
-        >
-          Плазменная резка
+        <li>
+          <Link
+            href={"/plasma-cutting"}
+            className={`${styles.productNavItem} ${
+              styles.productNavItemPlasma
+            } ${type === Products.PLASMA_CUTTING ? `${styles.invis}` : ""} ${
+              styles.productNavItemText
+            }`}
+          >
+            Плазменная резка
+          </Link>
         </li>
         <li
           className={`${styles.productNavItem} ${styles.productNavItemAdvan}`}
