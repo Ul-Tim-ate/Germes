@@ -1,27 +1,34 @@
 import React, { Dispatch, FC, SetStateAction } from "react";
 import styles from "../../styles/product-nav.module.sass";
+import { Products } from "../../types/products";
 
 interface ProductNavProps {
   setAdvan: Dispatch<SetStateAction<boolean>>;
-  advan: boolean;
+  type: Products;
 }
 
-const ProductNav: FC<ProductNavProps> = ({ advan, setAdvan }) => {
+const ProductNav: FC<ProductNavProps> = ({ setAdvan, type }) => {
   return (
     <nav className={styles.productNav}>
       <ul className={styles.productNavList}>
         <li
-          className={`${styles.productNavItem} ${styles.productNavItemVacuum} ${styles.invis}`}
+          className={`${styles.productNavItem} ${styles.productNavItemVacuum} ${
+            type === Products.VACUUM_PLATING ? `${styles.invis}` : ""
+          }`}
         >
           Вакуумная металлизация
         </li>
         <li
-          className={`${styles.productNavItem} ${styles.productNavItemPowder}`}
+          className={`${styles.productNavItem} ${styles.productNavItemPowder} ${
+            type === Products.POWDER_COATING ? `${styles.invis}` : ""
+          }`}
         >
           Порошковая покраска
         </li>
         <li
-          className={`${styles.productNavItem} ${styles.productNavItemPlasma}`}
+          className={`${styles.productNavItem} ${styles.productNavItemPlasma} ${
+            type === Products.PLASMA_CUTTING ? `${styles.invis}` : ""
+          }`}
         >
           Плазменная резка
         </li>

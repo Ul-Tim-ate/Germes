@@ -1,32 +1,56 @@
 import React, { FC, useState } from "react";
 import styles from "../../styles/product.module.sass";
+import { Products } from "../../types/products";
 import ProductAdvan from "./product-advan";
 import ProductNav from "./product-nav";
 import ProductSwiper from "./product-swiper";
 
-interface ProductProps {}
+interface ProductProps {
+  header: string;
+  description: string[];
+  type: Products;
+  leftColumn: string[];
+  rightColumn: string[];
+}
 
-const Product: FC<ProductProps> = () => {
+const Product: FC<ProductProps> = ({
+  description,
+  header,
+  leftColumn,
+  rightColumn,
+  type,
+}) => {
   const [advan, setAdvan] = useState(false);
+  let productClass = "";
+  switch (type) {
+    case Products.VACUUM_PLATING:
+      productClass = `${styles.productWrapperVacuum}`;
+      break;
+    case Products.POWDER_COATING:
+      productClass = `${styles.productWrapperPowder}`;
+      break;
+    default:
+      break;
+  }
+
   return (
     <section className={styles.product}>
-      <div className={`container ${styles.productWrapper}`}>
-        <h1 className={styles.productHeader}>Вакуумная металлизация</h1>
-        <p className={styles.productDescription}>
-          С помощью такой технологии происходит обработка поверхностей изделий
-          путём переноса мелких металлических частиц в вакууме. Они покрывают
-          изделия плотным слоем.
-        </p>
-        <p className={styles.productDescription}>
-          Мы покрываем изделия из дерева, железа, пластмассы, да и вообще любого
-          материала.
-        </p>
+      <div className={`container ${styles.productWrapper} ${productClass}`}>
+        <h1 className={styles.productHeader}>{header}</h1>
+        {description.map((el) => {
+          return <p className={styles.productDescription}>{el}</p>;
+        })}
         <div className={styles.productSwiper}>
           <ProductSwiper />
         </div>
         <button className={styles.productGetPrice}>Получить прайс</button>
-        <ProductNav advan={advan} setAdvan={setAdvan} />
-        <ProductAdvan advan={advan} setAdvan={setAdvan} />
+        <ProductNav setAdvan={setAdvan} type={type} />
+        <ProductAdvan
+          leftColumn={leftColumn}
+          rightColumn={rightColumn}
+          advan={advan}
+          setAdvan={setAdvan}
+        />
       </div>
     </section>
   );
