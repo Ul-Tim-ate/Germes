@@ -45,7 +45,11 @@ const Product: FC<ProductProps> = ({
       <div className={`container ${styles.productWrapper} ${borderClass}`}>
         <h1 className={styles.productHeader}>{header}</h1>
         {description.map((el) => {
-          return <p className={styles.productDescription}>{el}</p>;
+          return (
+            <p key={el} className={styles.productDescription}>
+              {el}
+            </p>
+          );
         })}
         <div className={styles.productSwiper}>
           <ProductSwiper />
