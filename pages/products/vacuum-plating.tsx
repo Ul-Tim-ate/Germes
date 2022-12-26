@@ -1,5 +1,5 @@
-import Product from "../components/product/product";
-import { Products } from "../types/products";
+import Product from "../../components/product/product";
+import { Products } from "../../types/products";
 
 const VacuumPlating = () => {
   const leftColumn = [

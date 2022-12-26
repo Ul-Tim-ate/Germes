@@ -1,6 +1,6 @@
 import React from "react";
-import Product from "../components/product/product";
-import { Products } from "../types/products";
+import Product from "../../components/product/product";
+import { Products } from "../../types/products";
 
 const PowderCoating = () => {
   const leftColumn = [

@@ -14,7 +14,7 @@ const ProductNav: FC<ProductNavProps> = ({ setAdvan, type }) => {
       <ul className={styles.productNavList}>
         <li>
           <Link
-            href={"/vacuum-plating"}
+            href={"/products/vacuum-plating"}
             className={`${styles.productNavItem} ${
               styles.productNavItemVacuum
             } ${type === Products.VACUUM_PLATING ? `${styles.invis}` : ""} ${
@@ -26,7 +26,7 @@ const ProductNav: FC<ProductNavProps> = ({ setAdvan, type }) => {
         </li>
         <li>
           <Link
-            href={"/powder-coating"}
+            href={"/products/powder-coating"}
             className={`${styles.productNavItem} ${
               styles.productNavItemPowder
             } ${type === Products.POWDER_COATING ? `${styles.invis}` : ""} ${
@@ -38,7 +38,7 @@ const ProductNav: FC<ProductNavProps> = ({ setAdvan, type }) => {
         </li>
         <li>
           <Link
-            href={"/plasma-cutting"}
+            href={"/products/plasma-cutting"}
             className={`${styles.productNavItem} ${
               styles.productNavItemPlasma
             } ${type === Products.PLASMA_CUTTING ? `${styles.invis}` : ""} ${
